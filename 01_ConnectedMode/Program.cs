@@ -33,7 +33,6 @@ namespace _01_ConnectedMode
             //SqlCommand command = new SqlCommand(cmdText, sqlConnection);
             //command.CommandTimeout = 5; // default - 30sec
 
-
             //////// ExecuteNonQuery - виконує команду яка не повертає результат 
             ///////(insert, update, delete...),
             ////////але метод повертає кількітсь рядків, які були задіяні
@@ -52,9 +51,13 @@ namespace _01_ConnectedMode
             //Console.WriteLine("Result: " + res);
             #endregion
             int id = 2;
+            string name = "Pукавиці";
             #region Execute Reader
             string cmdText = $@"select * from Products
-                              where Id = '{id}'";
+                              where Id = {id}";
+
+            string cmdText2 = $@"select * from Products
+                              where Name = '{name}'";
 
             SqlCommand command = new SqlCommand(cmdText, sqlConnection);
 
@@ -84,13 +87,6 @@ namespace _01_ConnectedMode
 
             reader.Close();
             #endregion
-
-
-
-
-
-
-
 
             sqlConnection.Close();
         }
