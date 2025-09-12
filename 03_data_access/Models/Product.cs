@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _02_CRUD_Interface
+namespace _03_data_access.Models
 {
-    internal class Product
+    public class Product
     {
         public int Id { get; set; }
         public string Name { get; set; }
