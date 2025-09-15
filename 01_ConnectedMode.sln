@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "01_ConnectedMode", "01_Conn
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "02_CRUD_Interface", "02_CRUD_Interface\02_CRUD_Interface.csproj", "{3E2D3C62-436C-41EA-BD67-BCFA0CC781AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_SportShopUA", "03_SportShopUA\03_SportShopUA.csproj", "{CCA73DDA-3976-4B83-8970-565C8065F058}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_SportShopUA", "03_SportShopUA\03_SportShopUA.csproj", "{CCA73DDA-3976-4B83-8970-565C8065F058}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03_data_access", "03_data_access\03_data_access.csproj", "{87F0ABBF-DA9F-4069-BE9A-DBB477A8AD95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03_data_access", "03_data_access\03_data_access.csproj", "{87F0ABBF-DA9F-4069-BE9A-DBB477A8AD95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04_LinqToSQL", "04_LinqToSQL\04_LinqToSQL.csproj", "{9CF05F9B-998A-4DC6-80FE-90D04B577621}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{87F0ABBF-DA9F-4069-BE9A-DBB477A8AD95}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{87F0ABBF-DA9F-4069-BE9A-DBB477A8AD95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{87F0ABBF-DA9F-4069-BE9A-DBB477A8AD95}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CF05F9B-998A-4DC6-80FE-90D04B577621}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CF05F9B-998A-4DC6-80FE-90D04B577621}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CF05F9B-998A-4DC6-80FE-90D04B577621}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CF05F9B-998A-4DC6-80FE-90D04B577621}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
