@@ -13,6 +13,7 @@ namespace _04_LinqToSQL
         static void Main(string[] args)
         {
             SportShopDbContextDataContext db = new SportShopDbContextDataContext();
+           
             //CRUD Interface
             var products = db.Products;
             foreach (var p in products)

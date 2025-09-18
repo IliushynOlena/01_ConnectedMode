@@ -1,6 +1,8 @@
 ﻿using System.Xml.Linq;
 using System.Xml;
 using _03_data_access.Models;
+using System.Configuration;
+
 
 namespace _02_CRUD_Interface
 {
@@ -8,13 +10,14 @@ namespace _02_CRUD_Interface
     {
         static void Main(string[] args)
         {
-            string connectionString = @"Data Source = DESKTOP-1LCG8OH\SQLEXPRESS; 
-                                        Initial Catalog = SportShop;
-                                        Integrated Security = true; 
-                                        TrustServerCertificate=True;";
+            //string connectionString = @"Data Source = DESKTOP-1LCG8OH\SQLEXPRESS; 
+            //                            Initial Catalog = SportShop;
+            //                            Integrated Security = true; 
+            //                            TrustServerCertificate=True;";
 
-           
-           
+            string connectionString = ConfigurationManager.ConnectionStrings["SportShopDbConnection"].ConnectionString;
+
+
             Product product = new Product()
             {
                  Name = "Oleg",
