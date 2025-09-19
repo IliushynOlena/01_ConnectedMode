@@ -1,4 +1,5 @@
 ﻿using System;
+using _05_IntroToEF.Entities;
 
 namespace _05_IntroToEF
 {
