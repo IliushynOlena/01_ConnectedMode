@@ -27,7 +27,7 @@ namespace _05_IntroToEF.Entities
         public DateTime Birthdate { get; set; }//not null --> null 
         public string Phone { get; set; }
 
-
+        //Hello commit
 
 
         /////Relational Type : Flight --- Client (*....*)
