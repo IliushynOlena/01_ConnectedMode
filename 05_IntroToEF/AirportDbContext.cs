@@ -1,5 +1,6 @@
 ﻿
 using _05_IntroToEF.Entities;
+using _05_IntroToEF.Helpers;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
@@ -78,51 +79,12 @@ namespace _05_IntroToEF
 
 
 
-            //Start initialization
-            modelBuilder.Entity<Airplane>().HasData(new Airplane[]
-          {
-                new Airplane()
-                {
-                     Id = 1,
-                     Model = "Boeing747",
-                     MaxPassangers = 200
-                },
-                 new Airplane()
-                {
-                     Id = 2,
-                     Model = "Boeing748",
-                     MaxPassangers = 200
-                },
-                    new Airplane()
-                {
-                     Id = 3,
-                     Model = "Broller747",
-                     MaxPassangers = 100
-                }
+            //Start initialization - Seeder
+            modelBuilder.SeedAiplanes();
+            modelBuilder.SeedFlights();
 
-          });
-            modelBuilder.Entity<Flight>().HasData(new Flight[]
-            {
-                new Flight()
-                {
-                     Number = 1,
-                     ArrivalCity = "Lviv",
-                     DepartureCity = "Kyiv",
-                     ArrivalTime = new DateTime(2025,9,21),
-                     DepartureTime = new DateTime(2025,9,21),
-                     AirplaneId = 1                    
-                },
-                 new Flight()
-                {
-                     Number = 2,
-                     ArrivalCity = "Lviv",
-                     DepartureCity = "Odessa",
-                     ArrivalTime = new DateTime(2025,9,22),
-                     DepartureTime = new DateTime(2025,9,22),
-                     AirplaneId = 2
-                }
 
-            });
+
         }
 
         /// Collection 
