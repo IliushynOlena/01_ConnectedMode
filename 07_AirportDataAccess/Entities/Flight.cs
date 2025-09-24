@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace _05_IntroToEF.Entities
 {
-    class Flight
+    public class Flight
     {
         public int Number { get; set; }
         public string ArrivalCity { get; set; }

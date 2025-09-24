@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace _05_IntroToEF.Entities
 {
-    class Airplane
+    public class Airplane
     {
         public int Id { get; set; }
         public string Model { get; set; }

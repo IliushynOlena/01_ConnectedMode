@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace _05_IntroToEF
 {
-    internal class AirportDbContext: DbContext
+    public class AirportDbContext: DbContext
     {
         //C       R    U       D 
         //Create Read Update Delede
